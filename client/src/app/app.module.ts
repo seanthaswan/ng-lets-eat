@@ -9,12 +9,32 @@ import {
   MatButtonModule,
   MatSelectModule,
   MatIconModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatListModule,
+  MatCardModule,
+  MatDividerModule
 } from "@angular/material";
 import { FormsModule } from "@angular/forms";
+import { RecipeComponent } from "./Recipe/recipe.component";
+import { ShoppingComponent } from "./Shopping/shopping.component";
+import { ShoppingListComponent } from "./Shopping/shopping-list/shopping-list.component";
+import { ShoppingListEditComponent } from "./Shopping/shopping-list-edit/shopping-list-edit.component";
+import { RecipeListComponent } from "./Recipe/recipe-list/recipe-list.component";
+import { RecipeItemComponent } from "./Recipe/recipe-item/recipe-item.component";
+import { RecipeItemDetailComponent } from "./Recipe/recipe-item-detail/recipe-item-detail.component";
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    RecipeComponent,
+    ShoppingComponent,
+    ShoppingListComponent,
+    ShoppingListEditComponent,
+    RecipeListComponent,
+    RecipeItemComponent,
+    RecipeItemDetailComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -23,7 +43,10 @@ import { FormsModule } from "@angular/forms";
     MatButtonModule,
     MatSelectModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule,
+    MatCardModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
