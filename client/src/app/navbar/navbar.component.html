@@ -3,10 +3,11 @@
 
   <span class="navbar-filler"></span>
 
-  <span>Sean</span>
-  <button mat-icon-button>
-    <mat-icon aria-hidden="false" aria-label="User Account Icon"
-      >person</mat-icon
-    >
+  <span class="display-name">{{ displayName }}</span>
+
+  <button mat-icon-button (click)="log()">
+    <mat-icon aria-hidden="false" aria-label="User Account Icon">
+      person
+    </mat-icon>
   </button>
 </mat-toolbar>
