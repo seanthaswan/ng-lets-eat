@@ -12,7 +12,8 @@ import {
   MatToolbarModule,
   MatListModule,
   MatCardModule,
-  MatDividerModule
+  MatDividerModule,
+  MatMenuModule
 } from "@angular/material";
 import { FormsModule } from "@angular/forms";
 import { RecipeComponent } from "./Recipe/recipe.component";
@@ -20,8 +21,8 @@ import { ShoppingComponent } from "./Shopping/shopping.component";
 import { ShoppingListComponent } from "./Shopping/shopping-list/shopping-list.component";
 import { ShoppingListEditComponent } from "./Shopping/shopping-list-edit/shopping-list-edit.component";
 import { RecipeListComponent } from "./Recipe/recipe-list/recipe-list.component";
-import { RecipeItemComponent } from "./Recipe/recipe-item/recipe-item.component";
-import { RecipeItemDetailComponent } from "./Recipe/recipe-item-detail/recipe-item-detail.component";
+import { RecipeItemComponent } from "./Recipe/recipe-list/recipe-item/recipe-item.component";
+import { RecipeDetailComponent } from "./Recipe/recipe-detail/recipe-detail.component";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { RecipeItemDetailComponent } from "./Recipe/recipe-item-detail/recipe-it
     ShoppingListEditComponent,
     RecipeListComponent,
     RecipeItemComponent,
-    RecipeItemDetailComponent
+    RecipeDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +47,8 @@ import { RecipeItemDetailComponent } from "./Recipe/recipe-item-detail/recipe-it
     MatToolbarModule,
     MatListModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,14 +2,40 @@
   <mat-toolbar class="navbar" color="primary">
     <span>Let's Eat</span>
 
-    <span class="navbar-filler"></span>
+    <mat-icon aria-hidden="false" aria-label="Sign Out Icon">
+      local_dining
+    </mat-icon>
 
-    <span class="display-name">{{ displayName }}</span>
+    <div class="navbar-right">
+      <span class="display-name">{{ displayName }}</span>
 
-    <button mat-icon-button (click)="log()">
-      <mat-icon aria-hidden="false" aria-label="User Account Icon">
-        person
-      </mat-icon>
-    </button>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon aria-hidden="false" aria-label="User Account Icon">
+          account_circle
+        </mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <a href="#" class="navbar-menu-link"
+          ><button mat-menu-item>Recipes</button></a
+        >
+        <a href="#" class="navbar-menu-link"
+          ><button mat-menu-item>Shopping List</button></a
+        >
+        <a href="#" class="navbar-menu-link"
+          ><button mat-menu-item>Save Data</button></a
+        >
+        <a href="#" class="navbar-menu-link"
+          ><button mat-menu-item>Fetch Data</button></a
+        >
+        <a href="#" class="navbar-menu-link"
+          ><button mat-menu-item class="sign-out-link">
+            Sign Out
+            <mat-icon aria-hidden="false" aria-label="Sign Out Icon">
+              exit_to_app
+            </mat-icon>
+          </button></a
+        >
+      </mat-menu>
+    </div>
   </mat-toolbar>
 </nav>

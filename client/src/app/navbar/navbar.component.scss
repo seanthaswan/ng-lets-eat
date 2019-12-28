@@ -5,6 +5,7 @@
 .navbar {
   max-width: 900px;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .navbar-filler {
@@ -13,4 +14,15 @@
 
 .display-name {
   margin-right: 5px;
+}
+
+.navbar-menu-link {
+  text-decoration: none;
+}
+
+.sign-out-link {
+  mat-icon {
+    font-size: 18px;
+    height: 20px;
+  }
 }
