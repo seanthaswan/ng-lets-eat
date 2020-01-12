@@ -1,3 +1,15 @@
-<mat-list-item>Chicken</mat-list-item>
-<mat-list-item>Tomatoes</mat-list-item>
-<mat-list-item>Pasta (Spaghetti)</mat-list-item>
+<mat-action-list>
+  <mat-list-item
+    *ngFor="let item of ingredients"
+    fxLayout="row"
+    fxLayoutAlign="space-between"
+  >
+    <p class="ingredient-name">{{ item.name }}</p>
+    <p>{{ item.quantity }} {{ item.unit }}</p>
+    <button mat-button-icon color="warn">
+      <mat-icon color="warn">trash_delete_forever</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-action-list>
+<mat-divider [inset]="true"></mat-divider>
+<h3>Total: $50</h3>

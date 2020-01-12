@@ -1,4 +1,5 @@
 mat-card {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -13,5 +14,26 @@ mat-card {
   .right {
     padding: 10px;
     background-size: contain;
+  }
+}
+
+.action-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+
+  .left {
+    button {
+      margin-right: 5px;
+    }
+
+    mat-icon {
+      font-size: 20px;
+    }
+  }
+
+  .delete-button {
+    align-self: flex-end;
   }
 }

@@ -1,11 +1,9 @@
 <div class="component-container shopping-container">
   <mat-card class="mat-elevation-z3">
     <h2>Shopping List</h2>
-    <mat-divider [inset]="true"></mat-divider>
+    <mat-divider [inset]="true" *ngIf="isEditOpen"></mat-divider>
     <app-shopping-list-edit *ngIf="isEditOpen"></app-shopping-list-edit>
     <mat-divider [inset]="true" *ngIf="isEditOpen"></mat-divider>
-    <mat-action-list>
-      <app-shopping-list></app-shopping-list>
-    </mat-action-list>
+    <app-shopping-list></app-shopping-list>
   </mat-card>
 </div>
