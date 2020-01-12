@@ -1,0 +1,17 @@
+mat-card {
+  margin-bottom: 10px;
+}
+
+.card-content-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px;
+
+  .left {
+  }
+
+  .right {
+    padding: 10px;
+    background-size: contain;
+  }
+}

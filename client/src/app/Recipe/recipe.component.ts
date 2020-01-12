@@ -6,7 +6,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./recipe.component.scss"]
 })
 export class RecipeComponent implements OnInit {
-  constructor() {}
+  isRecipeDetailOpen: boolean;
+
+  constructor() {
+    this.isRecipeDetailOpen = true;
+  }
 
   ngOnInit() {}
 }

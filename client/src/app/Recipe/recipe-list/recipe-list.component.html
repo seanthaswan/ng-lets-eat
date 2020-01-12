@@ -32,7 +32,12 @@
       </mat-card-subtitle>
     </mat-card-header>
 
-    <div class="recipe-image" [ngStyle]="recipe.imageStyles"></div>
+    <div
+      role="img"
+      [attr.aria-label]="recipe.name + ' image'"
+      class="recipe-image"
+      [ngStyle]="recipe.imageStyles"
+    ></div>
 
     <mat-card-content class="recipe-description">
       {{ recipe.description }}
