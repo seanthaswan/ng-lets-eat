@@ -3,11 +3,17 @@
   top: 10px;
   right: 17px;
 }
+
+.recipe-card-container {
+  margin-top: 10px;
+}
+
 mat-card {
   overflow-y: scroll;
   overflow-x: hidden;
+  width: 300px;
   border-bottom: 5px solid rgba(0, 0, 0, 0.05);
-  margin: 2px;
+  margin: 5px auto;
 }
 
 .recipe-name {

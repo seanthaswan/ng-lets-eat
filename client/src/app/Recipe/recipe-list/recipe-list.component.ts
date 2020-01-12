@@ -22,6 +22,13 @@ export class RecipeListComponent implements OnInit {
       "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2010/12/10/0/EI1C07_Chicken-Tetrazzini_s4x3.jpg.rend.hgtvcom.616.462.suffix/1382539596721.jpeg"
     ),
     new Recipe(
+      "Chicken Tetrazinni",
+      ["Pasta", "Creamy", "Comfort"],
+      `Tetrazzini is an American dish made with diced poultry or seafood and
+      mushroom in a butter/cream and cheese sauce flavored with wine or sherry.`,
+      "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2010/12/10/0/EI1C07_Chicken-Tetrazzini_s4x3.jpg.rend.hgtvcom.616.462.suffix/1382539596721.jpeg"
+    ),
+    new Recipe(
       "Test Recipe 2",
       ["Pasta", "Creamy", "Comfort"],
       "This is simply a test",

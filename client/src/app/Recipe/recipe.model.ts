@@ -11,11 +11,12 @@ export class Recipe {
     this.description = desc;
     this.imagePath = imagePath;
     this.imageStyles = {
-      maxHeight: "200px",
-      height: "200px",
+      maxHeight: "100px",
+      height: "100px",
       background: `url(${imagePath}) center center no-repeat`,
       backgroundSize: "cover",
-      marginBottom: "15px"
+      marginBottom: "15px",
+      borderRadius: "2px"
     };
   }
 }
