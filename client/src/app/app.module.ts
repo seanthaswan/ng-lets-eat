@@ -7,14 +7,19 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import {
   MatInputModule,
   MatButtonModule,
+  MatButtonToggleModule,
   MatSelectModule,
   MatIconModule,
   MatToolbarModule,
   MatListModule,
   MatCardModule,
   MatDividerModule,
-  MatMenuModule
+  MatMenuModule,
+  MatGridListModule,
+  MatChipsModule
 } from "@angular/material";
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 import { FormsModule } from "@angular/forms";
 import { RecipeComponent } from "./Recipe/recipe.component";
 import { ShoppingComponent } from "./Shopping/shopping.component";
@@ -42,13 +47,17 @@ import { RecipeDetailComponent } from "./Recipe/recipe-detail/recipe-detail.comp
     FormsModule,
     MatInputModule,
     MatButtonModule,
+    MatButtonToggleModule,
     MatSelectModule,
     MatIconModule,
     MatToolbarModule,
     MatListModule,
     MatCardModule,
     MatDividerModule,
-    MatMenuModule
+    MatMenuModule,
+    MatGridListModule,
+    MatChipsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

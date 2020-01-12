@@ -1,0 +1,29 @@
+.new-recipe-button {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+}
+mat-card {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.05);
+  margin: 2px;
+}
+
+.recipe-name {
+}
+
+.recipe-tag {
+  display: inline-flex;
+  padding: 2px 5px;
+  border-radius: 16px;
+  align-items: center;
+  cursor: default;
+  min-height: 32px;
+  height: 1px;
+  font-size: 12px;
+  margin: 1px;
+  background: rgba(0, 0, 0, 0.05);
+}
+.recipe-image {
+}
