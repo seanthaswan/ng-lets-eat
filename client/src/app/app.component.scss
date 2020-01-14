@@ -1,4 +1,13 @@
 .content-wrapper {
-  max-width: 900px;
+  display: grid;
+  max-width: 90vw;
+  width: 90vw;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
   margin: 0 auto;
+  transition: all 0.25s ease;
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 }

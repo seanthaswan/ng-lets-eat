@@ -20,7 +20,7 @@ import {
 } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
 
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule, FormControl } from "@angular/forms";
 import { RecipeComponent } from "./Recipe/recipe.component";
 import { ShoppingComponent } from "./Shopping/shopping.component";
 import { ShoppingListComponent } from "./Shopping/shopping-list/shopping-list.component";
@@ -57,7 +57,8 @@ import { RecipeDetailComponent } from "./Recipe/recipe-detail/recipe-detail.comp
     MatMenuModule,
     MatGridListModule,
     MatChipsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,14 +1,15 @@
 <mat-action-list>
-  <mat-list-item
-    *ngFor="let item of ingredients"
-    fxLayout="row"
-    fxLayoutAlign="space-between"
-  >
-    <p class="ingredient-name">{{ item.name }}</p>
-    <p>{{ item.quantity }} {{ item.unit }}</p>
-    <button mat-button-icon color="warn">
-      <mat-icon color="warn">trash_delete_forever</mat-icon>
-    </button>
+  <mat-list-item *ngFor="let item of ingredients">
+    <div class="ingredient-container">
+      <p class="ingredient-name">{{ item.name }}</p>
+
+      <p class="ingredient-quantity">{{ item.quantity }} {{ item.unit }}</p>
+
+      <button mat-button-icon color="warn" class="delete-button">
+        <i class="material-icons">trash_delete_forever</i>
+        <!-- <mat-icon color="warn">trash_delete_forever</mat-icon> -->
+      </button>
+    </div>
   </mat-list-item>
 </mat-action-list>
 <mat-divider [inset]="true"></mat-divider>

@@ -1,0 +1,29 @@
+.shopping-edit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-bottom: 10px;
+
+  form {
+    width: 100%;
+  }
+
+  mat-form-field {
+    display: block;
+    width: 100%;
+  }
+
+  .ingredient-form-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+    width: 100%;
+  }
+  .ingredient-button-group {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5px;
+    width: 100%;
+  }
+}

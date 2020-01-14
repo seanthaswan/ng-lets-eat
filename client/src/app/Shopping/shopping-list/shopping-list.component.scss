@@ -1,3 +1,26 @@
+.ingredient-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .ingredient-name {
   font-weight: bold !important;
+  flex: 200px 0;
+}
+
+.ingredient-quantity {
+  flex: 1 0;
+}
+
+.delete-button {
+  flex: 1;
+
+  width: 40px;
+  color: rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
 }

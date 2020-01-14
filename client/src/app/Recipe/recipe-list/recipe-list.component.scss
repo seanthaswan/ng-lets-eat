@@ -21,15 +21,14 @@ mat-card {
 
 .recipe-tag {
   display: inline-flex;
-  padding: 2px 5px;
   border-radius: 16px;
   align-items: center;
   cursor: default;
-  min-height: 32px;
-  height: 1px;
+  padding: 4px 8px;
   font-size: 12px;
   margin: 1px;
   background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .recipe-image {
 }

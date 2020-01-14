@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { FormControl, FormGroup } from "@angular/forms";
 
 @Component({
-  selector: 'app-shopping-list-edit',
-  templateUrl: './shopping-list-edit.component.html',
-  styleUrls: ['./shopping-list-edit.component.scss']
+  selector: "app-shopping-list-edit",
+  templateUrl: "./shopping-list-edit.component.html",
+  styleUrls: ["./shopping-list-edit.component.scss"]
 })
 export class ShoppingListEditComponent implements OnInit {
+  ingredientForm: FormGroup;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
+    this.ingredientForm = new FormGroup({
+      ingredientName: new FormControl(),
+      ingredientQuantity: new FormControl(),
+      ingredientUnit: new FormControl()
+    });
   }
 
+  ngOnInit() {}
 }
