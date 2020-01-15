@@ -1,39 +1,57 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
 mat-card {
-  margin-top: 10px;
-  margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    mat-card-title {
+        font-size: 25px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+    .recipe-tag {
+        display: inline-flex;
+        border-radius: 16px;
+        align-items: center;
+        cursor: default;
+        padding: 4px 8px;
+        font-size: 12px;
+        margin: 1px;
+        background: rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
 }
 
 .card-content-area {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px;
-
-  .left {
-  }
-
-  .right {
-    padding: 10px;
-    background-size: contain;
-  }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+    .left {}
+    .right {
+        padding: 10px;
+        background-size: contain;
+    }
+    .recipe-description {
+        padding-bottom: 15px;
+    }
 }
 
 .action-button-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-
-  .left {
-    button {
-      margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    .left {
+        button {
+            margin-right: 5px;
+        }
+        mat-icon {
+            font-size: 20px;
+        }
     }
-
-    mat-icon {
-      font-size: 20px;
+    .delete-button {
+        align-self: flex-end;
     }
-  }
-
-  .delete-button {
-    align-self: flex-end;
-  }
 }

@@ -1,33 +1,22 @@
 <div class="shopping-edit-container">
-  <h3>Add Ingredient</h3>
-  <form *ngIf="true" [formGroup]="ingredientForm" novalidate>
-    <mat-form-field class="ingredient-name-field">
-      <mat-label>Name</mat-label>
-      <input matInput placeholder="Bok Choy, Salt, Worchestishire Sauce" />
-    </mat-form-field>
-    <div class="ingredient-form-group">
-      <mat-form-field class="ingredient-quantity-field">
-        <input
-          matInput
-          type="number"
-          placeholder="Quantity"
-          formControlName="ingredientQuantity"
-          min="1"
-          step="0.5"
-        />
-      </mat-form-field>
-      <mat-form-field class="ingredient-unit-field">
-        <mat-label>Unit</mat-label>
-        <input
-          matInput
-          formControlName="ingredientUnit"
-          placeholder="12oz bottle, 1/2lb bag, pallet"
-        />
-      </mat-form-field>
-    </div>
-    <div class="ingredient-button-group">
-      <button mat-stroked-button>Add to list</button>
-      <button mat-stroked-button>Clear</button>
-    </div>
-  </form>
+    <h3>Add Ingredient</h3>
+    <form [formGroup]="ingredientForm" novalidate>
+        <mat-form-field class="ingredient-name-field">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Bok Choy, Salt, Worchestishire Sauce" />
+        </mat-form-field>
+        <div class="ingredient-form-group">
+            <mat-form-field class="ingredient-quantity-field">
+                <input matInput type="number" placeholder="Quantity" formControlName="ingredientQuantity" min="1" step="0.5" />
+            </mat-form-field>
+            <mat-form-field class="ingredient-unit-field">
+                <mat-label>Unit</mat-label>
+                <input matInput formControlName="ingredientUnit" placeholder="12oz bottle, 1/2lb bag, pallet" />
+            </mat-form-field>
+        </div>
+        <div class="ingredient-button-group">
+            <button mat-stroked-button>Add to list</button>
+            <button mat-stroked-button>Clear</button>
+        </div>
+    </form>
 </div>

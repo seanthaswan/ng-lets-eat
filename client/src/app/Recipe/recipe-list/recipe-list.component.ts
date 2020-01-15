@@ -41,6 +41,7 @@ export class RecipeListComponent implements OnInit {
   public lgBreakpoint:boolean;
   public gridColumns:number;
   public gridRowHeight:string;
+  
   constructor() {}
 
   ngOnInit() {
