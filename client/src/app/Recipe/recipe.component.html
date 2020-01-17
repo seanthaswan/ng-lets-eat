@@ -2,6 +2,7 @@
   <mat-card class="mat-elevation-z3">
     <h2>Recipes</h2>
     <mat-divider [inset]="true" *ngIf="isRecipeDetailOpen"></mat-divider>
+    <app-recipe-edit *ngIf="isRecipeEditOpen"></app-recipe-edit>
     <app-recipe-detail *ngIf="isRecipeDetailOpen"></app-recipe-detail>
     <mat-divider [inset]="true"></mat-divider>
     <app-recipe-list></app-recipe-list>

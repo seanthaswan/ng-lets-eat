@@ -6,21 +6,39 @@
 
 .ingredient-name {
   font-weight: bold !important;
-  flex: 200px 0;
+  flex: 100px 0;
 }
 
 .ingredient-quantity {
   flex: 1 0;
+  display: flex;
+  align-items: center;
 }
 
 .delete-button {
+  display: flex;
   flex: 1;
-
-  width: 40px;
+  justify-content: flex-end;
   color: rgba(0, 0, 0, 0.05);
-  transition: all 0.25s ease;
+
   &:hover {
-    color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
+    span {
+      color: rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  span {
+    background: transparent;
+    padding: 0 3px;
+    border-radius: 100%;
+    transition: background 0.25s ease;
+    font-size: 12px;
+
+    &:hover {
+      background: rgba(244, 67, 53, 0.5);
+      cursor: pointer;
+      color: white;
+      border-radius: 100%;
+    }
   }
 }

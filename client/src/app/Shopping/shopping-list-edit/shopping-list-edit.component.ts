@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormControl, FormGroup } from "@angular/forms";
+import { MatIconRegistry } from "@angular/material";
 
 @Component({
   selector: "app-shopping-list-edit",

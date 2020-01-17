@@ -6,8 +6,13 @@
       <p class="ingredient-quantity">{{ item.quantity }} {{ item.unit }}</p>
 
       <button mat-button-icon color="warn" class="delete-button">
-        <i class="material-icons">trash_delete_forever</i>
-        <!-- <mat-icon color="warn">trash_delete_forever</mat-icon> -->
+        <!-- <mat-icon class="material-icons">trash_delete_forever</mat-icon> -->
+        <!-- <mat-icon
+          svgIcon="delete_forever"
+          aria-hidden="false"
+          aria-label="Example thumbs up SVG icon"
+          >X</mat-icon -->
+        <span>&times;</span>
       </button>
     </div>
   </mat-list-item>

@@ -9,5 +9,9 @@
 
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
+
+    app-recipe {
+      width: 90vw;
+    }
   }
 }

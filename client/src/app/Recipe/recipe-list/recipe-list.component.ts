@@ -35,6 +35,13 @@ export class RecipeListComponent implements OnInit {
       "https://cdn.apartmenttherapy.info/image/upload/v1567541461/k/Photo/Recipes/2019-09-how-to-shrimp-alfredo/HT-Shrimp-Alfredo_103.jpg"
     )
   ];
+
+  public smBreakpoint: boolean;
+  public mdBreakpoint: boolean;
+  public lgBreakpoint: boolean;
+  public gridColumns: number;
+  public gridRowHeight: string;
+
   constructor() {}
 
   ngOnInit() {
