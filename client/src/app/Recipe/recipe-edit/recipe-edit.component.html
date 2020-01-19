@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()" #form="ngForm">
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
   <div class="bookmark-tag"></div>
   <mat-card>
     <mat-card-header>
@@ -8,21 +8,30 @@
       />
       <mat-card-title>
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Recipe Name" value="" /> </mat-form-field
+          <input
+            matInput
+            placeholder="Recipe Name"
+            name="recipeName"
+            ngModel
+          /> </mat-form-field
       ></mat-card-title>
       <mat-card-subtitle>
         <mat-form-field class="example-full-width">
           <input
             matInput
+            name="recipeTags"
+            ngModel
             placeholder="Tags (comma-separated)"
             value="Tag 1, Tag 2, Tag 3"
           /> </mat-form-field
       ></mat-card-subtitle>
       <!-- TODO: Turn placeholder image into a URL field -->
-      <img
-        class=""
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTycdT_deXDbgenfaAC7mzKuiZel6cYmr7DkUiphA9ObRIoOqX&s"
-      />
+      <div class="image-chooser-container">
+        <img
+          class=""
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTycdT_deXDbgenfaAC7mzKuiZel6cYmr7DkUiphA9ObRIoOqX&s"
+        />
+      </div>
     </mat-card-header>
     <div class="card-content-area">
       <div class="left">

@@ -4,6 +4,10 @@ mat-card {
   margin-bottom: 10px;
 }
 
+mat-card-header {
+  margin-bottom: 30px;
+}
+
 .bookmark-tag {
   position: absolute;
   background: transparent;
@@ -37,7 +41,7 @@ mat-card {
   }
 
   .right {
-    padding: 10px;
+    padding-left: 20px;
     background-size: contain;
   }
 }
@@ -66,5 +70,13 @@ mat-card {
 @media (max-width: 800px) {
   .mat-card-header {
     display: block;
+    mat-form-field {
+      width: 100%;
+    }
+
+    .image-chooser-container {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
