@@ -67,9 +67,9 @@ mat-card-header {
   }
 }
 
-@media (max-width: 800px) {
-  .mat-card-header {
-    display: block;
+@media (max-width: 1000px) {
+  mat-card .mat-card-header {
+    flex-direction: column;
     mat-form-field {
       width: 100%;
     }

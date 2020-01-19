@@ -12,6 +12,10 @@
   mat-form-field {
     display: block;
     width: 100%;
+
+    .ingredient-name-field {
+      width: 100% !important;
+    }
   }
 
   .ingredient-form-group {
@@ -26,4 +30,8 @@
     gap: 5px;
     width: 100%;
   }
+}
+
+::ng-deep .mat-form-field-infix {
+  width: auto !important;
 }

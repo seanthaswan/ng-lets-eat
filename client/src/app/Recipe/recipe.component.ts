@@ -10,7 +10,7 @@ export class RecipeComponent implements OnInit {
   isRecipeEditOpen: boolean;
 
   constructor() {
-    this.isRecipeDetailOpen = true;
+    this.isRecipeDetailOpen = false;
     this.isRecipeEditOpen = true;
   }
 
